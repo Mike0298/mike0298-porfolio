@@ -1,0 +1,29 @@
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0 0.5rem;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: var(--color-lighter-dark);
+  top: 0;
+  bottom: 0;
+
+  margin-left: -3px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .timeline::after {
+    right: 31px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .timeline::after {
+    left: 50%;
+  }
+}

@@ -1,0 +1,46 @@
+.slider {
+  position: relative;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-image {
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  margin: 0.5rem 2rem;
+}
+
+.arrow {
+  cursor: pointer;
+  user-select: none;
+  font-size: 50px;
+}
+
+.arrow-left {
+  left: 32px;
+}
+
+.arrow-right {
+  right: 32px;
+}
+
+.image {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.image.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1080px) {
+  .slider-image {
+    width: 150px;
+    height: 150px;
+  }
+}

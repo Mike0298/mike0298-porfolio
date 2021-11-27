@@ -1,0 +1,135 @@
+.accordian-item {
+  width: 100%;
+  background-color: var(--color-lighter-dark);
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+  box-shadow: 0.5rem 2px 0.5rem rgb(0, 0, 0, 0.1);
+}
+
+.accordian-item-header {
+  width: inherit;
+  font-size: 1.3rem;
+  color: var(--color-full-white);
+  text-decoration: none;
+  background-color: var(--color-lighter-dark);
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.accordian-item-header i {
+  color: var(--color-green);
+  padding: 0.5rem;
+}
+
+.accordian-item-header .ion-ios-arrow-down {
+  display: none;
+}
+
+.accordian-item-content {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.4rem;
+  background-color: var(--color-not-quite-black);
+  transition: max-height 700ms;
+  font-size: 1rem;
+}
+
+.accordian-item-content::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 100%;
+  background-color: var(--color-blue);
+}
+
+.accordian-item-content > div {
+  padding: 1rem;
+}
+
+.accordian-item:target .accordian-item-content {
+  max-height: 40rem;
+}
+
+.accordian-item:target .accordian-item-header .ion-ios-arrow-forward {
+  display: none;
+}
+
+.accordian-item:target .accordian-item-header .ion-ios-arrow-down {
+  display: block;
+}
+
+.accordian-item-content .detail {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accordian-item-content .detail .time {
+  font-size: 1rem;
+}
+
+.accordian-item-content .desc {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.accordian-item-content .desc > div {
+  width: 40%;
+}
+
+.accordian-item-content .desc > div p {
+  font-weight: bold;
+}
+
+.accordian-item-content .desc.full > div {
+  width: 90%;
+}
+
+.accordian-item-content .desc p {
+  font-size: 1.2rem;
+}
+
+.accordian-item-content .desc ul {
+  margin-top: 0.2rem;
+}
+
+.accordian-item-content .desc ul li {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1080px) {
+  .accordian-item-header {
+    font-size: 1.1rem;
+  }
+
+  .accordian-item-content .detail {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  }
+
+  .accordian-item-content .detail > div {
+    margin-bottom: 0.3rem;
+  }
+
+  .accordian-item-content .desc {
+    flex-direction: column;
+  }
+
+  .accordian-item-content .desc > div {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .accordian-item-content .desc ul li {
+    margin-left: 0.8rem;
+  }
+}

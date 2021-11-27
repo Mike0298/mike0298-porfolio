@@ -1,0 +1,161 @@
+.container {
+  padding: 4rem;
+
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top > div {
+  width: 50%;
+  height: 100%;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  padding: 2rem 0;
+}
+
+.introduction {
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.effect-container {
+  display: inline-block;
+}
+
+.typing-animation {
+  font-size: 3.8rem;
+  margin: 1rem 0;
+  font-weight: bolder;
+  overflow: hidden;
+  border-right: 0.15em solid var(--color-green);
+  white-space: nowrap;
+  color: var(--color-blue);
+  animation: typing 1.5s steps(25, end) forwards, blinking 0.75s infinite;
+  width: 0;
+  padding-right: 10px;
+  animation-delay: 0.5s;
+}
+
+@keyframes typing {
+  from {
+    width: -1%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinking {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: var(--color-green);
+  }
+}
+
+.paragraph {
+  font-size: 1.3rem;
+  text-align: justify;
+  margin: 1rem 0;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+.skill {
+  margin-top: 2rem;
+  width: 100%;
+  height: 50%;
+}
+
+.skill h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.carosel {
+  height: 70%;
+}
+
+.skill p {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.skill > p {
+  font-style: italic;
+  color: var(--color-green);
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 1.5rem 0;
+    max-width: 90%;
+  }
+
+  .top {
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 2rem;
+    align-items: center;
+  }
+
+  .introduction {
+    text-align: center;
+  }
+
+  .typing-animation {
+    font-size: 2.5rem;
+  }
+
+  .left img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .top > div {
+    width: 100%;
+  }
+
+  .skill h2 {
+    font-size: 1.5rem;
+  }
+
+  .effect-container {
+    margin-right: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1300px;
+  }
+}

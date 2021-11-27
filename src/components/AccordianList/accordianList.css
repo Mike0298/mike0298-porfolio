@@ -1,0 +1,12 @@
+.accordian-list {
+  width: 80%;
+  max-width: 1300px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1080px) {
+  .accordian-list {
+    width: 100%;
+  }
+}

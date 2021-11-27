@@ -1,0 +1,35 @@
+:root {
+  --color-not-quite-black: #23272a;
+  --color-dark: #2c2f33;
+  --color-lighter-dark: #45494e;
+  --color-full-white: #fff;
+  --color-full-black: #000;
+  --color-green: #00ae7a;
+  --color-blue: #5865f2;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+:root::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-dark);
+  color: var(--color-full-white);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
