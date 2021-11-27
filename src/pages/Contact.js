@@ -70,7 +70,7 @@ const Contact = () => {
           <i className="icon ion-ios-document"></i>
         </a>
         <a
-          href="https://Mike0298.github.io/portfolio"
+          href="https://github.com/Mike0298/portfolio"
           target="_blank"
           rel="noreferrer"
           className="button"
