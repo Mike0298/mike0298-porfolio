@@ -11,7 +11,7 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <div className="content">
-        <p>Welcome to my Portfolio</p>
+        <p>Hello World</p>
         <NavButton page="introduction" text="About Me" />
       </div>
     </div>

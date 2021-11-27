@@ -1,6 +1,11 @@
 import "./App.css";
 import Navbar from "./components/navbar/navbar";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -31,6 +36,7 @@ const App = () => {
           <Route path="/works" element={<Works />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>

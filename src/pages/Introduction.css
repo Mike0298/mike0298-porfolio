@@ -1,6 +1,5 @@
 .container {
   padding: 4rem;
-
   margin: 0 auto;
 }
 
@@ -20,6 +19,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.left img {
+  height: 400px;
+  width: 400px;
 }
 
 .right {
