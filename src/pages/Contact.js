@@ -67,11 +67,16 @@ const Contact = () => {
           className="button"
         >
           View my Resume
-          <i className="icon ion-ios-paper"></i>
+          <i className="icon ion-ios-document"></i>
         </a>
-        <div className="button">
+        <a
+          href="https://Mike0298.github.io/portfolio"
+          target="_blank"
+          rel="noreferrer"
+          className="button"
+        >
           View code on<i className="icon ion-logo-github"></i>
-        </div>
+        </a>
       </div>
     </div>
   );
