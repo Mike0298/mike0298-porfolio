@@ -20,7 +20,7 @@ const Introduction = () => {
       <div className="top">
         <div className="left">
           <img
-            src="https://game.takt-op.jp/wp-content/uploads/twitter_icon_02.png"
+            src="https://cdn.pro-bel.com/wp-content/uploads/2019/11/blank-avatar-1.png"
             alt="me"
           />
         </div>
