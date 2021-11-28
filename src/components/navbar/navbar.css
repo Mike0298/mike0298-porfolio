@@ -28,15 +28,6 @@ nav {
   color: var(--color-full-white);
 }
 
-.item:hover {
-  border-radius: 36%;
-  background: var(--color-green);
-}
-
-.item:hover:nth-child(odd) {
-  background: var(--color-blue);
-}
-
 .item:hover::before {
   transform: translate(-100%, -50%) scale(0.5);
 }
@@ -129,5 +120,14 @@ nav {
     pointer-events: none;
     color: var(--color-full-white);
     font-weight: bold;
+  }
+
+  .item:hover {
+    border-radius: 36%;
+    background: var(--color-green);
+  }
+
+  .item:hover:nth-child(odd) {
+    background: var(--color-blue);
   }
 }

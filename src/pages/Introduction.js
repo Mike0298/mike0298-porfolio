@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Introduction.css";
+import me from "../assets/me.jpg";
 
 import NavButton from "../components/navButton/navButton";
 import ImageSlider from "../components/ImageSlider/imageSlider";
@@ -19,10 +20,7 @@ const Introduction = () => {
     <div className="container">
       <div className="top">
         <div className="left">
-          <img
-            src="https://cdn.pro-bel.com/wp-content/uploads/2019/11/blank-avatar-1.png"
-            alt="me"
-          />
+          <img src={me} alt="me" />
         </div>
         <div className="right">
           <div className="introduction">
