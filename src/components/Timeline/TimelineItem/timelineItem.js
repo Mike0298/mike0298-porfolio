@@ -9,7 +9,7 @@ const TimelineItem = ({ item, id }) => {
       }`}
     >
       <div className="item-content">
-        <div className="type">{item.type}</div>
+        <div className="item-content__type">{item.type}</div>
         <div className="item-content__info">
           <div>{item.university}</div>
           <div>
