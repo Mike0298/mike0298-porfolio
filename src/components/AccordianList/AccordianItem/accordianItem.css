@@ -7,7 +7,7 @@
   box-shadow: 0.5rem 2px 0.5rem rgb(0, 0, 0, 0.1);
 }
 
-.accordian-item-header {
+.accordian-item__header {
   width: inherit;
   font-size: 1.3rem;
   color: var(--color-full-white);
@@ -20,16 +20,16 @@
   font-weight: bold;
 }
 
-.accordian-item-header i {
+.accordian-item__header i {
   color: var(--color-green);
   padding: 0.5rem;
 }
 
-.accordian-item-header .ion-ios-arrow-down {
+.accordian-item__header .ion-ios-arrow-down {
   display: none;
 }
 
-.accordian-item-content {
+.accordian-item__content {
   max-height: 0;
   overflow: hidden;
   position: relative;
@@ -39,7 +39,7 @@
   font-size: 1rem;
 }
 
-.accordian-item-content::before {
+.accordian-item__content::before {
   content: "";
   position: absolute;
   width: 0.6rem;
@@ -47,23 +47,23 @@
   background-color: var(--color-blue);
 }
 
-.accordian-item-content > div {
+.accordian-item__content > div {
   padding: 1rem;
 }
 
-.accordian-item:target .accordian-item-content {
+.accordian-item:target .accordian-item__content {
   max-height: 40rem;
 }
 
-.accordian-item:target .accordian-item-header .ion-ios-arrow-forward {
+.accordian-item:target .accordian-item__header .ion-ios-arrow-forward {
   display: none;
 }
 
-.accordian-item:target .accordian-item-header .ion-ios-arrow-down {
+.accordian-item:target .accordian-item__header .ion-ios-arrow-down {
   display: block;
 }
 
-.accordian-item-content .detail {
+.accordian-item__content__detail {
   font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
@@ -71,65 +71,65 @@
   font-weight: bold;
 }
 
-.accordian-item-content .detail .time {
+.accordian-item__content__detail__time {
   font-size: 1rem;
 }
 
-.accordian-item-content .desc {
+.accordian-item__content__desc {
   margin-top: 1rem;
   display: flex;
   justify-content: space-around;
 }
 
-.accordian-item-content .desc > div {
+.accordian-item__content__desc > div {
   width: 40%;
 }
 
-.accordian-item-content .desc > div p {
+.accordian-item__content__desc > div p {
   font-weight: bold;
 }
 
-.accordian-item-content .desc.full > div {
+.accordian-item__content__desc--full > div {
   width: 90%;
 }
 
-.accordian-item-content .desc p {
+.accordian-item__content__desc p {
   font-size: 1.2rem;
 }
 
-.accordian-item-content .desc ul {
+.accordian-item__content__desc ul {
   margin-top: 0.2rem;
 }
 
-.accordian-item-content .desc ul li {
+.accordian-item__content__desc ul li {
   font-size: 1rem;
 }
 
 @media only screen and (max-width: 1080px) {
-  .accordian-item-header {
+  .accordian-item__header {
     font-size: 1.1rem;
   }
 
-  .accordian-item-content .detail {
+  .accordian-item__content__detail {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 0.5rem;
   }
 
-  .accordian-item-content .detail > div {
+  .accordian-item__content__detail > div {
     margin-bottom: 0.3rem;
   }
 
-  .accordian-item-content .desc {
+  .accordian-item__content__desc {
     flex-direction: column;
   }
 
-  .accordian-item-content .desc > div {
+  .accordian-item__content__desc > div {
     width: 100%;
     margin-bottom: 0.5rem;
   }
 
-  .accordian-item-content .desc ul li {
+  .accordian-item__content__desc ul li {
     margin-left: 0.8rem;
   }
 }

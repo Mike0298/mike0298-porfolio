@@ -4,9 +4,9 @@ import "./cardItem.css";
 const CardItem = ({ data }) => {
   return (
     <div className="carditem">
-      <div className="project-title">{data.title}</div>
-      <div className="desc">{data.desc}</div>
-      <div className="tasks">
+      <div className="carditem__project-title">{data.title}</div>
+      <div className="carditem__desc">{data.desc}</div>
+      <div className="carditem__tasks">
         <p>My tasks:</p>
         <ul>
           {data.task.map((task, index) => {
@@ -14,15 +14,15 @@ const CardItem = ({ data }) => {
           })}
         </ul>
       </div>
-      <div className="technology">
+      <div className="carditem__technology">
         <span>Technology used: </span> {data.technology.join(", ")}
       </div>
-      <div className="source">
+      <div className="carditem__source">
         <a href={data.sourceCode} target="_blank" rel="noreferrer">
           View on <i className="icon ion-logo-github"></i>
         </a>
       </div>
-      <div className="note">{data.note}</div>
+      <div className="carditem__note">{data.note}</div>
     </div>
   );
 };

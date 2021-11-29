@@ -16,35 +16,35 @@
   margin: 0.5rem 0;
 }
 
-.project-title {
+.carditem__project-title {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
 }
 
-.desc {
+.carditem__desc {
   font-size: 1.2rem;
 }
 
-.carditem .tasks p {
+.carditem__tasks p {
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-.carditem .tasks ul {
+.carditem__tasks ul {
   margin-left: 1rem;
   font-size: 1rem;
 }
 
-.carditem .tasks ul li {
+.carditem__tasks ul li {
   margin: 0.5rem 0;
 }
 
-.technology span {
+.carditem__technology span {
   font-weight: bold;
 }
 
-.source {
+.carditem__source {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@
   margin: 1rem 0;
 }
 
-.source > a {
+.carditem__source > a {
   text-decoration: none;
   color: var(--color-white);
   background-color: var(--color-green);
@@ -65,18 +65,18 @@
   align-items: center;
 }
 
-.source i {
+.carditem__source i {
   font-size: 2rem;
   margin-left: 10px;
 }
 
-.note {
+.carditem__note {
   font-style: italic;
   text-align: center;
   font-size: 0.8rem;
 }
 
-.note::before {
+.carditem__note::before {
   content: "*";
   color: red;
 }

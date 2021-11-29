@@ -19,23 +19,23 @@ const Introduction = () => {
   return (
     <div className="container">
       <div className="top">
-        <div className="left">
+        <div className="top__image">
           <img src={me} alt="me" />
         </div>
-        <div className="right">
-          <div className="introduction">
-            <div className="name">I'm Hieu, I'm a</div>
+        <div className="top__details">
+          <div className="top__details__introduction">
+            <p>I'm Hieu, I'm a</p>
             <div className="effect-container">
               <div className="typing-animation">Junior Developer</div>
             </div>
           </div>
-          <div className="paragraph">
+          <div className="top__details__paragraph">
             An university graduate who is looking for an internship or a junior
             position in IT industry. Have university experience in both web
             development and software development. Easy to adapt to any workspace
             and willing to learn new technologies required to do the work.
           </div>
-          <div className="skill">
+          <div className="top__details__skill">
             <h2>I have experience with</h2>
             <ImageSlider skills={skillData} />
             <p>There are still more to learn!</p>

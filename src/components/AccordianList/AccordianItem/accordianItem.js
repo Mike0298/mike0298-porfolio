@@ -4,21 +4,26 @@ import "./accordianItem.css";
 const AccordianItem = ({ item, id }) => {
   return (
     <div className="accordian-item" id={`item${id}`}>
-      <a href={`#item${id}`} className="accordian-item-header">
+      <a href={`#item${id}`} className="accordian-item__header">
         {item.title}
         <i className="icon ion-ios-arrow-forward"></i>
         <i className="icon ion-ios-arrow-down"></i>
       </a>
-      <div className="accordian-item-content">
+      <div className="accordian-item__content">
         <div>
-          <div className="detail">
+          <div className="accordian-item__content__detail">
             <div>{item.company}</div>
-            <div className="time">
+            <div className="accordian-item__content__detail__time">
               {item.start} - {item.end}
             </div>
           </div>
           <div className="location">{item.location}</div>
-          <div className={`desc ${item.technology.length === 0 && "full"}`}>
+          <div
+            className={`accordian-item__content__desc ${
+              item.technology.length === 0 &&
+              "accordian-item__content__desc--full"
+            }`}
+          >
             <div className="task">
               <p>Tasks</p>
               <ul>

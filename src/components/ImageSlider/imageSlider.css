@@ -6,40 +6,32 @@
   align-items: center;
 }
 
-.slider-image {
+.slider__image__slider-image {
   width: 200px;
   height: 200px;
   z-index: 1;
   margin: 0.5rem 2rem;
 }
 
-.arrow {
+.slider__arrow {
   cursor: pointer;
   user-select: none;
   font-size: 50px;
 }
 
-.arrow-left {
-  left: 32px;
-}
-
-.arrow-right {
-  right: 32px;
-}
-
-.image {
+.slider__image {
   opacity: 0;
   transition-duration: 1s ease;
 }
 
-.image.active {
+.slider__image.slider__image--active {
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.05);
 }
 
 @media only screen and (max-width: 1080px) {
-  .slider-image {
+  .slider__image__slider-image {
     width: 150px;
     height: 150px;
   }

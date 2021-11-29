@@ -15,16 +15,16 @@ const Contact = () => {
       <div className="title">Contact Me</div>
       <div className="details">
         <h1>General Details</h1>
-        <div className="details-container">
-          <div className="details-item">
+        <div>
+          <div className="details__item">
             <span>Name:</span>
             <p>Hieu Duc Pham</p>
           </div>
-          <div className="details-item">
+          <div className="details__item">
             <span>Phone Number:</span>
             <p>(+61)403545979</p>
           </div>
-          <div className="details-item">
+          <div className="details__item">
             <span>Email:</span>
             <p>hieuducpham2016@gmail.com</p>
           </div>
@@ -32,7 +32,7 @@ const Contact = () => {
       </div>
       <div className="details">
         <h1>Other Media</h1>
-        <div className="details-item icon">
+        <div className="details__item details__item--icon">
           <div>
             <a
               href="https://www.linkedin.com/in/hieu-pham-9a82a6174/"

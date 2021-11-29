@@ -20,13 +20,17 @@ const ImageSlider = ({ skills }) => {
   return (
     <div className="slider">
       <i
-        className="icon ion-ios-arrow-back arrow arrow-left"
+        className="icon ion-ios-arrow-back slider__arrow"
         onClick={() => prevImage()}
       ></i>
       {skills.map((skill, index) => {
         return (
           <div
-            className={index === current ? "image active" : "image"}
+            className={
+              index === current
+                ? "slider__image slider__image--active"
+                : "image"
+            }
             key={index}
           >
             {index === current && (
@@ -34,7 +38,7 @@ const ImageSlider = ({ skills }) => {
                 <img
                   src={skill.image}
                   alt={skill.name}
-                  className="slider-image"
+                  className="slider__image__slider-image"
                 />
                 <p>{skill.name}</p>
               </div>
@@ -43,7 +47,7 @@ const ImageSlider = ({ skills }) => {
         );
       })}
       <i
-        className="icon ion-ios-arrow-forward arrow arrow-right"
+        className="icon ion-ios-arrow-forward slider__arrow"
         onClick={() => nextImage()}
       ></i>
     </div>
