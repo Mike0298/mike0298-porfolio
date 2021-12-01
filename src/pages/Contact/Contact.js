@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import "./Contact.css";
-import discord from "../assets/discord.png";
-import linkedin from "../assets/linkedin.png";
-import github from "../assets/github.png";
+import "./Contact.scss";
+import discord from "../../assets/discord.png";
+import linkedin from "../../assets/linkedin.png";
+import github from "../../assets/github.png";
 
 const Contact = () => {
   useEffect(() => {
@@ -11,28 +11,28 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="contact-container">
-      <div className="title">Contact Me</div>
-      <div className="details">
+    <div className="contact">
+      <div className="contact__title">Contact Me</div>
+      <div className="contact__details">
         <h1>General Details</h1>
         <div>
-          <div className="details__item">
+          <div className="contact__details__item">
             <span>Name:</span>
             <p>Hieu Duc Pham</p>
           </div>
-          <div className="details__item">
+          <div className="contact__details__item">
             <span>Phone Number:</span>
             <p>(+61)403545979</p>
           </div>
-          <div className="details__item">
+          <div className="contact__details__item">
             <span>Email:</span>
             <p>hieuducpham2016@gmail.com</p>
           </div>
         </div>
       </div>
-      <div className="details">
+      <div className="contact__details">
         <h1>Other Media</h1>
-        <div className="details__item details__item--icon">
+        <div className="contact__details__item icon">
           <div>
             <a
               href="https://www.linkedin.com/in/hieu-pham-9a82a6174/"
@@ -59,12 +59,12 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="buttons">
+      <div className="contact__button">
         <a
           href="https://drive.google.com/file/d/16LobGflfcQtnz_Zmd2TQouMLnahhteaw/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
-          className="button"
+          className="contact__button__content"
         >
           View my Resume
           <i className="icon ion-ios-document"></i>
@@ -73,7 +73,7 @@ const Contact = () => {
           href="https://github.com/Mike0298/portfolio"
           target="_blank"
           rel="noreferrer"
-          className="button"
+          className="contact__button__content"
         >
           View code on<i className="icon ion-logo-github"></i>
         </a>

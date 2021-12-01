@@ -1,0 +1,91 @@
+@import "../../../base";
+
+.carditem {
+  width: 47%;
+  margin: 1rem 0;
+  background-color: $color-blue;
+  padding: 0.8rem;
+  border-radius: 5px;
+  transition: transform 600ms;
+
+  &:hover {
+    transform: scale(105%);
+    transition: transform 600ms;
+  }
+
+  & > div {
+    margin: 0.5rem 0;
+  }
+
+  &__project-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__desc {
+    font-size: 1.2rem;
+  }
+
+  &__tasks {
+    p {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    ul {
+      margin-left: 1rem;
+      font-size: 1rem;
+
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+
+  &__technology {
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 1rem 0;
+
+    & > a {
+      text-decoration: none;
+      color: $color-full-white;
+      background-color: $color-green;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    i {
+      font-size: 2rem;
+      margin-left: 10px;
+    }
+  }
+
+  &__note {
+    font-style: italic;
+    text-align: center;
+    font-size: 0.8rem;
+
+    &::before {
+      content: "*";
+      color: red;
+    }
+  }
+  @media only screen and (max-width: 1080px) {
+    width: 95%;
+  }
+}

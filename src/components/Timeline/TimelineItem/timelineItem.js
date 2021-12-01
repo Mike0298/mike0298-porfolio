@@ -1,5 +1,5 @@
 import React from "react";
-import "./timelineItem.css";
+import "./timelineItem.scss";
 
 const TimelineItem = ({ item, id }) => {
   return (

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "./Homepage.css";
+import "./Homepage.scss";
 
-import NavButton from "../components/navButton/navButton";
+import NavButton from "../../components/navButton/navButton";
 
 const Homepage = () => {
   useEffect(() => {
@@ -10,7 +10,7 @@ const Homepage = () => {
   }, []);
   return (
     <div className="homepage">
-      <div className="content">
+      <div className="homepage__content">
         <p>Hello World</p>
         <NavButton page="introduction" text="About Me" />
       </div>

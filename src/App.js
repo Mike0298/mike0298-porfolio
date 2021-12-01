@@ -11,12 +11,12 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { loadData } from "./redux/actions/dataAction";
 
-import Homepage from "./pages/Homepage";
-import Introduction from "./pages/Introduction";
-import Education from "./pages/Education";
-import Works from "./pages/Works";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import Homepage from "./pages/Homepage/Homepage";
+import Introduction from "./pages/Introduction/Introduction";
+import Education from "./pages/Education/Education";
+import Works from "./pages/Works/Works";
+import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   const dispatch = useDispatch();

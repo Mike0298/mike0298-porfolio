@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "./Works.css";
-import AccordianList from "../components/AccordianList/accordianList";
-import NavButton from "../components/navButton/navButton";
+import "./Works.scss";
+import AccordianList from "../../components/AccordianList/accordianList";
+import NavButton from "../../components/navButton/navButton";
 import { useSelector } from "react-redux";
 
 const Works = () => {
@@ -15,10 +15,12 @@ const Works = () => {
   });
 
   return (
-    <div className="works-container">
-      <div className="title">Work Experience</div>
+    <div className="works">
+      <div className="works__title">Work Experience</div>
       <AccordianList workData={workData} />
-      <NavButton page="projects" text="Projects" />
+      <div className="works__bottom">
+        <NavButton page="projects" text="Projects" />
+      </div>
     </div>
   );
 };

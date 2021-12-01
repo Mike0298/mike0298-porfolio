@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import NavButton from "../components/navButton/navButton";
-import Timeline from "../components/Timeline/timeline";
+import NavButton from "../../components/navButton/navButton";
+import Timeline from "../../components/Timeline/timeline";
 import { useSelector } from "react-redux";
 
-import "./Education.css";
+import "./Education.scss";
 
 const Education = () => {
   useEffect(() => {
@@ -16,10 +16,10 @@ const Education = () => {
   });
 
   return (
-    <div className="education-container">
-      <div className="title">Education</div>
+    <div className="education">
+      <div className="education__title">Education</div>
       <Timeline educationData={educationData} />
-      <div className="bottom">
+      <div className="education__bottom">
         <NavButton page="works" text="Work Experience" />
       </div>
     </div>

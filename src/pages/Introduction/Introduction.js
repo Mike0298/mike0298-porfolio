@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import "./Introduction.css";
-import me from "../assets/me.jpg";
+import "./Introduction.scss";
+import me from "../../assets/me.jpg";
 
-import NavButton from "../components/navButton/navButton";
-import ImageSlider from "../components/ImageSlider/imageSlider";
+import NavButton from "../../components/navButton/navButton";
+import ImageSlider from "../../components/ImageSlider/imageSlider";
 import { useSelector } from "react-redux";
 
 const Introduction = () => {

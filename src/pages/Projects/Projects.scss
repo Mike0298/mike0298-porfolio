@@ -1,0 +1,13 @@
+@import "../../base";
+
+.projects {
+  padding-top: 1rem;
+
+  &__title {
+    @include page-title;
+  }
+
+  &__bottom {
+    @include page-bottom;
+  }
+}

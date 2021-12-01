@@ -1,0 +1,37 @@
+@import "../../base";
+
+.slider {
+  position: relative;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__arrow {
+    cursor: pointer;
+    user-select: none;
+    font-size: 50px;
+  }
+
+  &__image {
+    opacity: 0;
+    transition-duration: 1s ease;
+
+    &__slider-image {
+      width: 200px;
+      height: 200px;
+      z-index: 1;
+      margin: 0.5rem 2rem;
+      @media only screen and (max-width: 1080px) {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    &.slider__image--active {
+      opacity: 1;
+      transition-duration: 1s;
+      transform: scale(1.05);
+    }
+  }
+}

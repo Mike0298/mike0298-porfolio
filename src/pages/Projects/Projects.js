@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "./Projects.css";
-import Cardlist from "../components/Cardlist/cardlist";
-import NavButton from "../components/navButton/navButton";
+import "./Projects.scss";
+import Cardlist from "../../components/Cardlist/cardlist";
+import NavButton from "../../components/navButton/navButton";
 import { useSelector } from "react-redux";
 
 const Projects = () => {
@@ -15,10 +15,10 @@ const Projects = () => {
   });
 
   return (
-    <div className="projects-container">
-      <div className="title">Previous Projects</div>
+    <div className="projects">
+      <div className="projects__title">Previous Projects</div>
       <Cardlist projectData={projectData} />
-      <div className="bottom">
+      <div className="projects__bottom">
         <NavButton page="contact" text="Contact Me" />
       </div>
     </div>

@@ -100,7 +100,7 @@
     right: 12.5px;
   }
 
-  .info {
+  .item-content__info {
     flex-direction: column;
   }
 }

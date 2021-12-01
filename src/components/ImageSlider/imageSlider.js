@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./imageSlider.css";
+import "./imageSlider.scss";
 
 const ImageSlider = ({ skills }) => {
   const [current, setCurrent] = useState(0);

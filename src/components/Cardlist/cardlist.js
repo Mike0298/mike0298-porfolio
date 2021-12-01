@@ -1,5 +1,5 @@
 import React from "react";
-import "./cardlist.css";
+import "./cardlist.scss";
 import CardItem from "./CardItem/cardItem";
 
 const Cardlist = ({ projectData }) => {

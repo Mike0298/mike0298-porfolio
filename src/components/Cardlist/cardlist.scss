@@ -1,0 +1,15 @@
+.cardlist {
+  width: 90%;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 1080px) {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}

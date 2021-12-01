@@ -1,0 +1,26 @@
+@import "../../base";
+
+.navButton {
+  background: $color-blue;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  width: max-content;
+  padding: 0.68rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: $color-full-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+
+  i {
+    margin-left: 1rem;
+  }
+
+  @media only screen and (max-width: 1080px) {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}

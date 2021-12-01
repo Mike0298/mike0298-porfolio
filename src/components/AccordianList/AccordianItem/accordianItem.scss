@@ -1,0 +1,137 @@
+@import "../../../base";
+
+.accordian-item {
+  width: 100%;
+  background-color: $color-lighter-dark;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+  box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+
+  &__header {
+    width: inherit;
+    font-size: 1.3rem;
+    color: $color-full-white;
+    text-decoration: none;
+    background-color: $color-lighter-dark;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+
+    i {
+      color: $color-green;
+      padding: 0.5rem;
+    }
+
+    .ion-ios-arrow-down {
+      display: none;
+    }
+
+    @media only screen and (max-width: 1080px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.4rem;
+    background-color: $color-not-quite-black;
+    transition: max-height 700ms;
+    font-size: 1rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0.6rem;
+      height: 100%;
+      background-color: $color-blue;
+    }
+
+    & > div {
+      padding: 1rem;
+    }
+
+    &__detail {
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+
+      &__time {
+        font-size: 1rem;
+      }
+
+      @media only screen and (max-width: 1080px) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0.5rem;
+
+        & > div {
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+
+    &__desc {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-around;
+
+      & > div {
+        width: 40%;
+
+        p {
+          font-weight: bold;
+        }
+      }
+
+      &--full > div {
+        width: 90%;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      ul {
+        margin-top: 0.2rem;
+        li {
+          font-size: 1rem;
+        }
+      }
+
+      @media only screen and (max-width: 1080px) {
+        flex-direction: column;
+
+        & > div {
+          width: 100%;
+          margin-bottom: 0.5rem;
+        }
+
+        ul {
+          li {
+            margin-left: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  &:target &__content {
+    max-height: 40rem;
+  }
+
+  &:target {
+    .ion-ios-arrow-forward {
+      display: none;
+    }
+    .ion-ios-arrow-down {
+      display: block;
+    }
+  }
+}

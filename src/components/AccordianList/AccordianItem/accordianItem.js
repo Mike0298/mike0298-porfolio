@@ -1,5 +1,5 @@
 import React from "react";
-import "./accordianItem.css";
+import "./accordianItem.scss";
 
 const AccordianItem = ({ item, id }) => {
   return (

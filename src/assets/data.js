@@ -10,6 +10,11 @@ export const skillData = [
   },
   {
     image:
+      "https://logos-download.com/wp-content/uploads/2017/05/Sass_logo-700x524.png",
+    name: "Sass",
+  },
+  {
+    image:
       "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-1024.png",
     name: "ReactJS",
   },

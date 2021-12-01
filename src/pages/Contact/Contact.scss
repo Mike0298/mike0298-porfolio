@@ -1,0 +1,104 @@
+@import "../../base";
+
+.contact {
+  padding-top: 1rem;
+
+  &__title {
+    @include page-title;
+  }
+
+  &__details {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    font-size: 1.2rem;
+    position: relative;
+
+    h1 {
+      font-size: 1.5rem;
+      position: absolute;
+      top: -16px;
+      left: 1%;
+      width: 200px;
+      padding: 0.2rem 0.5rem;
+      background-color: $color-green;
+      border-radius: 5px;
+      box-shadow: 0.5rem 2px 0.5rem argb(0, 0, 0, 0.1);
+    }
+
+    & > div {
+      background-color: $color-blue;
+      padding: 2rem 1rem;
+      border-radius: 5px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0.5rem 0;
+
+      span {
+        font-weight: bold;
+        margin-bottom: 0.2rem;
+      }
+
+      @media only screen and (max-width: 1080px) {
+        flex-wrap: wrap;
+
+        & * {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    &__item.icon {
+      justify-content: space-around;
+      margin: 0;
+
+      & > div {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+
+        @media only screen and (max-width: 1080px) {
+          p {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__content {
+      margin: 1rem 0;
+      font-size: 1.3rem;
+      background-color: $color-green;
+      padding: 1rem;
+      border-radius: 5px;
+      width: 15%;
+      min-width: 250px;
+      text-align: center;
+      font-weight: bold;
+      color: $color-full-white;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        margin-left: 5px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

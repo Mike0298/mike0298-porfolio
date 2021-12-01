@@ -1,5 +1,5 @@
 import React from "react";
-import "./accordianList.css";
+import "./accordianList.scss";
 
 import AccordianItem from "./AccordianItem/accordianItem";
 
