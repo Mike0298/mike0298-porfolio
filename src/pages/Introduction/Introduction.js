@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
-import "./Introduction.scss";
-import me from "../../assets/me.jpg";
+import React, { useEffect } from 'react';
+import './Introduction.scss';
+import me from '../../assets/me.jpg';
 
-import NavButton from "../../components/navButton/navButton";
-import ImageSlider from "../../components/ImageSlider/imageSlider";
-import { useSelector } from "react-redux";
+import NavButton from '../../components/navButton/navButton';
+import ImageSlider from '../../components/ImageSlider/imageSlider';
+import { useSelector } from 'react-redux';
 
 const Introduction = () => {
   useEffect(() => {
-    document.title = "Mike0298 | About Me";
+    document.title = 'Mike0298 | About Me';
     window.scrollTo(0, 0);
   }, []);
 
@@ -30,10 +30,11 @@ const Introduction = () => {
             </div>
           </div>
           <div className="top__details__paragraph">
-            An university graduate who is looking for an internship or a junior
-            position in IT industry. Have university experience in both web
-            development and software development. Easy to adapt to any workspace
-            and willing to learn new technologies required to do the work.
+            A university graduate looking for new challenges, exploring limits
+            and contributing to a worthwhile workplace. Have university and
+            internship/junior experience in web and software engineering. Easy
+            to adapt to any workspace and willing to learn new technologies
+            required to do the work.
           </div>
           <div className="top__details__skill">
             <h2>I have experience with</h2>

@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
-import "./Contact.scss";
-import discord from "../../assets/discord.png";
-import linkedin from "../../assets/linkedin.png";
-import github from "../../assets/github.png";
+import React, { useEffect } from 'react';
+import './Contact.scss';
+import discord from '../../assets/discord.png';
+import linkedin from '../../assets/linkedin.png';
+import github from '../../assets/github.png';
 
 const Contact = () => {
   useEffect(() => {
-    document.title = "Mike0298 | Contact";
+    document.title = 'Mike0298 | Contact';
     window.scrollTo(0, 0);
   }, []);
 
@@ -55,7 +55,7 @@ const Contact = () => {
           </div>
           <div>
             <img src={discord} alt="discord" />
-            <p>大鳳#7777</p>
+            <p>大鳳#1710</p>
           </div>
         </div>
       </div>
@@ -75,7 +75,8 @@ const Contact = () => {
           rel="noreferrer"
           className="contact__button__content"
         >
-          View code on<i className="icon ion-logo-github"></i>
+          View source code of this portfolio
+          <i className="icon ion-logo-github"></i>
         </a>
       </div>
     </div>
